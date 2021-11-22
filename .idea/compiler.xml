@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SeleniumMavenNew" />
+        <module name="Java-SeleniumUI-RestAPI-Automation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SeleniumMavenNew" target="17" />
+      <module name="Java-SeleniumUI-RestAPI-Automation" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

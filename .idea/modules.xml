@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/IntelliJ_Projects_All.iml" filepath="$PROJECT_DIR$/.idea/IntelliJ_Projects_All.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SeleniumMavenNew/SeleniumMavenNew.iml" filepath="$PROJECT_DIR$/SeleniumMavenNew/SeleniumMavenNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeleniumMavenNew/Java-SeleniumUI-RestAPI-Automation.iml" filepath="$PROJECT_DIR$/SeleniumMavenNew/Java-SeleniumUI-RestAPI-Automation.iml" />
     </modules>
   </component>
 </project>
