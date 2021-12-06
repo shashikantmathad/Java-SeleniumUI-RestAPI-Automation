@@ -1,7 +1,6 @@
 package stepDefinations;
 
 import static io.restassured.RestAssured.given;
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,29 +24,23 @@ import resources.TestDataBuild;
 import resources.Utils;
 
 public class StepDefination extends Utils {
+	static String place_id;
 	RequestSpecification res;
 	ResponseSpecification resspec;
 	Response response;
 	TestDataBuild data =new TestDataBuild();
-	static String place_id;
 	
-
 @Given("Add Place Payload with {string}  {string} {string}")
 public void add_Place_Payload_with(String name, String language, String address) throws IOException {
-	    // Write code here that turns the phrase above into concrete actions
-	
-		 
 		 res=given().spec(requestSpecification())
 		.body(data.addPlacePayLoad(name,language,address));
 	}
 
 @When("user calls {string} with {string} http request")
 public void user_calls_with_http_request(String resource, String method) {
-	    // Write code here that turns the phrase above into concrete actions
-//constructor will be called with value of resource which you pass
+		//constructor will be called with value of resource which you pass
 		APIResources resourceAPI=APIResources.valueOf(resource);
 		System.out.println(resourceAPI.getResource());
-		
 		
 		resspec =new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 		
