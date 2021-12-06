@@ -23,7 +23,7 @@ public class SecondBigNum {
 //        System.out.println(big1);
 
         int temp, size;
-        int array[] = {10, 20, 25, 63, 96, 57};
+        int array[] = {23, 20, 25, 63, 96, 57};
         size = array.length;
 
         for(int i = 0; i<size; i++ ){
@@ -36,6 +36,8 @@ public class SecondBigNum {
                 }
             }
         }
-        System.out.println("Third second largest number is:: "+array[size-2]);
+        System.out.println("largest number is:: "+array[size-1]);
+        System.out.println("Second largest number is:: "+array[size-2]);
+        System.out.println("Third second largest number is:: "+array[size-3]);
     }
 }
